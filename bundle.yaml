@@ -3,3 +3,5 @@ version: "1"
 id: "cbci-casc-workshop-dev-controller"
 description: "CloudBees CI configuration bundle for the cbci-casc-workshop dev-controller Controller"
 parent: "base"
+rbac:
+ - "rbac.yaml"
