@@ -5,3 +5,5 @@ description: "CloudBees CI configuration bundle for the cbci-casc-workshop dev-c
 parent: "base"
 rbac:
  - "rbac.yaml"
+items:
+ - "folders.yaml"
