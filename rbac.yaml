@@ -20,20 +20,27 @@ roles:
   - com.cloudbees.jenkins.plugin.metrics.views.Alerter.View
   - nectar.plugins.rbac.groups.Group.View
   - nectar.plugins.rbac.roles.Role.View
+- name: job-manager
+  filterable: 'true'
+  permissions:
+  - hudson.model.Item.Read
+  - hudson.model.Item.Create
+  - hudson.model.Item.Configure
+  - hudson.model.Item.Build
 groups:
 - name: Administrators
   members:
     users:
     - admin
     - team-admin
-    - "REPLACE_GITHUB_USERNAME-admin"
+    - "logandonley-admin"
   roles:
   - name: administrator
     grantedAt: current
 - name: Managers
   members:
     users:
-    - "REPLACE_GITHUB_USERNAME"
+    - "logandonley"
   roles:
   - name: manager
     grantedAt: current
